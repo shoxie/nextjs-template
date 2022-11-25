@@ -10,15 +10,15 @@ describe("Home Page example test", () => {
   });
 
   it("should render the change language button", () => {
-    cy.get("button").contains("Click me to change language")
-  })
+    cy.get("button").contains("Click me to change language");
+  });
 
   it("should be able to change language", () => {
-    cy.get("button").contains("Click me to change language").click()
-    cy.get("h1").should("have.text", "Xin chào")
-    cy.get("button").contains("Click me to change language").click()
-    cy.get("h1").should("have.text", "Welcome")
-  })
+    cy.get("button").contains("Click me to change language").click();
+    cy.get("h1").should("have.text", "Xin chào");
+    cy.get("button").contains("Click me to change language").click();
+    cy.get("h1").should("have.text", "Welcome");
+  });
 });
 
 export {};

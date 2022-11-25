@@ -25,7 +25,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Internationalized (react-i18next)
 - More will be added soon
 
-## Plans 
+## Plans
 
 - [x] Add Storybook
 - [x] Add Storybook example

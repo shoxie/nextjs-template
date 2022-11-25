@@ -14,16 +14,16 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import "./commands";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-import { mount } from 'cypress/react18'
+import { mount } from "cypress/react18";
 
-import React from 'react';
-import { ThemeProvider } from '@chakra-ui/react';
-import theme from '@/lib/theme';
+import React from "react";
+import { ThemeProvider } from "@chakra-ui/react";
+import theme from "@/lib/theme";
 
 // Augment the Cypress namespace to include type definitions for
 // your custom command.
@@ -32,12 +32,12 @@ import theme from '@/lib/theme';
 declare global {
   namespace Cypress {
     interface Chainable {
-      mount: typeof mount
+      mount: typeof mount;
     }
   }
 }
 
-Cypress.Commands.add('mount', (jsx: React.ReactNode, options) =>
+Cypress.Commands.add("mount", (jsx: React.ReactNode, options) =>
   mount(React.createElement(ThemeProvider, { theme } as any, jsx), options)
 );
 

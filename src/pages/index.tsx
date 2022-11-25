@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useQuery } from "@tanstack/react-query";
 import { useEffect } from "react";
 
+import React from "react";
 import { Box, Heading, Button, VStack } from "@chakra-ui/react";
 
 import ExampleApi from "@/api/example";

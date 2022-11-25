@@ -29,5 +29,5 @@ export const Primary: Story = (args) => (
 Primary.args = {
   label: "Button",
   type: "primary",
-  status: "idle"
+  status: "idle",
 };
