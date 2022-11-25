@@ -14,7 +14,7 @@ export default function Home() {
         >
           Click me to change language
         </Button>
-        <Heading>{t("welcome")}</Heading>
+        <Heading as="h1">{t("welcome")}</Heading>
       </VStack>
     </Box>
   );

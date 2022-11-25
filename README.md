@@ -29,7 +29,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - [x] Add Storybook
 - [x] Add Storybook example
-- [ ] Add Cypress
-- [ ] Add Cypress example
+- [x] Add Cypress
+- [x] Add Cypress example
 - [ ] Add tRPC or React Query
 - [ ] Add tRPC or React Query example

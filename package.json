@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "cypress:open": "cypress open",
+    "cy:run": "cypress run --component"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.4.1",
@@ -42,6 +44,8 @@
     "@storybook/react": "^6.5.13",
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.3.0",
+    "cypress": "^11.2.0",
+    "cypress-axe": "^1.0.0",
     "eslint-plugin-storybook": "^0.6.7"
   }
 }
