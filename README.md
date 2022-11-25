@@ -28,7 +28,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Plans 
 
 - [x] Add Storybook
-- [ ] Add Storybook example
+- [x] Add Storybook example
 - [ ] Add Cypress
 - [ ] Add Cypress example
 - [ ] Add tRPC or React Query
