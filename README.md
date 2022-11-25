@@ -31,5 +31,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [x] Add Storybook example
 - [x] Add Cypress
 - [x] Add Cypress example
-- [ ] Add tRPC or React Query
-- [ ] Add tRPC or React Query example
+- [x] Add tRPC or React Query
+- [x] Add tRPC or React Query example

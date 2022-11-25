@@ -9,6 +9,9 @@
 /coverage
 /cypress/videos
 
+# env
+.env
+
 # next.js
 /.next/
 /out/

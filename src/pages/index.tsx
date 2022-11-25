@@ -1,8 +1,18 @@
 import { useTranslation } from "react-i18next";
+import { useQuery } from "@tanstack/react-query";
+import { useEffect } from "react";
+
 import { Box, Heading, Button, VStack } from "@chakra-ui/react";
+
+import ExampleApi from "@/api/example";
 
 export default function Home() {
   const { t, i18n } = useTranslation();
+  const { data, isLoading } = useQuery(["example"], () => ExampleApi.getList());
+
+  useEffect(() => {
+    console.log("data", data);
+  }, [data]);
 
   return (
     <Box h="100vh">
