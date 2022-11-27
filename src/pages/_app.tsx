@@ -10,15 +10,25 @@ import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import theme from "@/lib/theme";
 import i18n from "@/lib/i18n";
 
+// misc
+import DefaultLayout from "@/layouts/default";
+
 //initialization
 i18n.init();
 const queryClient = new QueryClient();
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({
+  Component,
+  pageProps,
+}: AppProps & { Component: { Layout?: any } }) {
+  const LayoutWrapper = Component.Layout || DefaultLayout;
+
   return (
     <QueryClientProvider client={queryClient}>
       <ChakraProvider theme={theme}>
-        <Component {...pageProps} />
+        <LayoutWrapper>
+          <Component {...pageProps} />
+        </LayoutWrapper>
       </ChakraProvider>
     </QueryClientProvider>
   );
